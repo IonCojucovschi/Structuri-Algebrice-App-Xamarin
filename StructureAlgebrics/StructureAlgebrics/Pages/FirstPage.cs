@@ -46,22 +46,22 @@ namespace StructureAlgebrics.Pages
             SetSupportActionBar(mToolbar);
 
             mLeftDataSet = new List<string>();
-            mLeftDataSet.Add("Left Item 1");
-            mLeftDataSet.Add("Left Item 2");
+            mLeftDataSet.Add("Proprietatile unui grup");
+            mLeftDataSet.Add("Prop. prod. 2 grupuri");
             mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
             mLeftDrawer.Adapter = mLeftAdapter;
 
             mRightDataSet = new List<string>();
-            mRightDataSet.Add("Right Item 1");
-            mRightDataSet.Add("Right Item 2");
+            mRightDataSet.Add("Prop. unui grup?");
+            mRightDataSet.Add("Prop. prod. 2 grup.");
             mRightAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mRightDataSet);
             mRightDrawer.Adapter = mRightAdapter;
 
             mDrawerToggle = new MenuActionManager(
                 this,                           //Host Activity
                 mDrawerLayout,                  //DrawerLayout
-                Resource.String.abc_capital_on,     //Opened Message
-                Resource.String.abc_searchview_description_clear     //Closed Message
+                Resource.String.openDrawer,     //Opened Message
+                Resource.String.closeDrawer     //Closed Message
             );
 
             mDrawerLayout.SetDrawerListener(mDrawerToggle);

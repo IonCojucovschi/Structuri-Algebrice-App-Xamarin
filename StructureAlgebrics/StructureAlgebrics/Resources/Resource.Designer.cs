@@ -1411,13 +1411,16 @@ namespace StructureAlgebrics
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int ic_action_help = 2130837573;
+			public const int background = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int ic_action_refresh = 2130837574;
+			public const int ic_action_help = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int notification_template_icon_bg = 2130837575;
+			public const int ic_action_refresh = 2130837575;
+			
+			// aapt resource value: 0x7f020048
+			public const int notification_template_icon_bg = 2130837576;
 			
 			static Drawable()
 			{
