@@ -1419,11 +1419,14 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f020047
 			public const int ic_action_refresh = 2130837575;
 			
-			// aapt resource value: 0x7f020049
-			public const int notification_template_icon_bg = 2130837577;
-			
 			// aapt resource value: 0x7f020048
-			public const int progress_bar = 2130837576;
+			public const int Icon = 2130837576;
+			
+			// aapt resource value: 0x7f02004a
+			public const int notification_template_icon_bg = 2130837578;
+			
+			// aapt resource value: 0x7f020049
+			public const int progress_bar = 2130837577;
 			
 			static Drawable()
 			{

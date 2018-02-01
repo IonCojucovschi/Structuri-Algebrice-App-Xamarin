@@ -16,7 +16,7 @@ using StructureAlgebrics.Reposytory;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Structuri Algebrice", MainLauncher = false, Theme = "@style/MyTheme")]
+    [Activity(Label = "Structuri Algebrice", MainLauncher = true, Theme = "@style/MyTheme")]
     public class GroupProperty : Activity
     {
 
@@ -71,6 +71,7 @@ namespace StructureAlgebrics.Pages
 
         private void ViewProperty_Click(object sender, EventArgs e)
         {
+           //// groupElement.Text = "2314413232411423";//autotest
             progressbarContor = true;
             progressBar.Progress = 0;
             progressBar.Max = 1000;
@@ -133,8 +134,9 @@ namespace StructureAlgebrics.Pages
                         for (int j = 1; j < dim + 1; j++)
                         {
                             matrix[i, j] = Convert.ToInt32(new string(text[contor],1));
+                            contor++;
                         }
-                        contor++;
+                        
                     }
                 }
                 else { return 0; }

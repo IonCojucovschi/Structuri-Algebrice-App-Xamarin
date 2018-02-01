@@ -66,7 +66,7 @@
     <Compile Include="Manager\MenuActionManager.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
-    <Compile Include="Reposytory\GroupProperty.cs" />
+    <Compile Include="Reposytory\GroupPropertyRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,7 +134,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\progress_bar.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
