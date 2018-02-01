@@ -1471,8 +1471,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c005d
 			public const int action_divider = 2131492957;
 			
-			// aapt resource value: 0x7f0c006a
-			public const int action_help = 2131492970;
+			// aapt resource value: 0x7f0c006c
+			public const int action_help = 2131492972;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int action_menu_divider = 2131492866;
@@ -1489,8 +1489,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0023
 			public const int action_mode_close_button = 2131492899;
 			
-			// aapt resource value: 0x7f0c0069
-			public const int action_refresh = 2131492969;
+			// aapt resource value: 0x7f0c006b
+			public const int action_refresh = 2131492971;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int activity_chooser_view_content = 2131492900;
@@ -1624,8 +1624,14 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002d
 			public const int parentPanel = 2131492909;
 			
+			// aapt resource value: 0x7f0c0069
+			public const int produceViewGroup = 2131492969;
+			
 			// aapt resource value: 0x7f0c0068
-			public const int produceViewGroup = 2131492968;
+			public const int produce_list_property = 2131492968;
+			
+			// aapt resource value: 0x7f0c006a
+			public const int produce_progressBar = 2131492970;
 			
 			// aapt resource value: 0x7f0c0052
 			public const int progressBar = 2131492946;

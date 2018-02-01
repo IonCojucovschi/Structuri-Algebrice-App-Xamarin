@@ -14,9 +14,11 @@ namespace StructureAlgebrics.Reposytory
 {
     public class GroupPropertyRepository
     {
-
+        int[,] t1=new int[20,20];
         static int r1, d1, r, d, r2, t, i, j, k, p, d2;
         public List<string> allProperty;
+
+        public int[,] matrixProduce=new int[20,20];
 
         public GroupPropertyRepository(int[,] matricea,int dimensiunea)
         {
@@ -43,7 +45,36 @@ namespace StructureAlgebrics.Reposytory
 
         }
 
+        public GroupPropertyRepository(int[,] matriceaA,int[,] matriceaB,int dimA,int dimB)
+        {
+            produs_cartezian(out matrixProduce, matriceaA,matriceaB,dimA,dimB);
+             
+        }
 
+
+
+
+        public void produs_cartezian(out int[,] masiv, int[,] a, int[,] b, int n, int m)
+        {
+            int k = 1;
+            t1 = new int[20, 20];
+            masiv = new int[30, 30];
+            int[] c = new int[100];
+            int[] f = new int[100];
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < m + 1; j++)
+                {
+                    f[k] = j;
+                    c[k] = i;
+                    t1[i, j] = k;
+                    k = k + 1;
+                }
+            for (int i = 1; i < m * n + 1; i++)
+                for (int j = 1; j < n * m + 1; j++)
+                {
+                    masiv[i, j] = t1[a[c[i], c[j]], b[f[i], f[j]]];
+                }
+        }
 
         public  void asociativ(int[,] masiv, int n)
         {
