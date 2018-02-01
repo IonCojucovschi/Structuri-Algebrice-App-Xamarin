@@ -12,10 +12,11 @@ using Android.Views;
 using Android.Support.V7.App;
 
 using Android.Widget;
+using StructureAlgebrics.Reposytory;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Structuri Algebrice", MainLauncher = true, Theme = "@style/MyTheme")]
+    [Activity(Label = "Structuri Algebrice", MainLauncher = false, Theme = "@style/MyTheme")]
     public class GroupProperty : Activity
     {
 
@@ -26,8 +27,15 @@ namespace StructureAlgebrics.Pages
         public int progressBarStatus;
 
 
-        private ListView listProperties;
+
+        private ListView listPropertiesView;
+        private List<string> propertyes;
         private EditText groupElement;
+
+
+        /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        static int[,] matrix;
+        private bool progressbarContor = true;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -42,7 +50,7 @@ namespace StructureAlgebrics.Pages
         public void FindViews() {
             viewProperty = FindViewById<Button>(Resource.Id.show_property);
             clear = FindViewById<Button>(Resource.Id.clear_all);
-            listProperties = FindViewById<ListView>(Resource.Id.list_property);
+            listPropertiesView = FindViewById<ListView>(Resource.Id.list_property);
             groupElement = FindViewById<EditText>(Resource.Id.grupul);
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar);
 
@@ -51,20 +59,28 @@ namespace StructureAlgebrics.Pages
         public void HandleEvents()
         {
             viewProperty.Click += ViewProperty_Click;
+            clear.Click += Clear_Click;
+            progressbarContor = false;
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            groupElement.Text = "";
+            listPropertiesView.Adapter= new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
         }
 
         private void ViewProperty_Click(object sender, EventArgs e)
         {
-
+            progressbarContor = true;
             progressBar.Progress = 0;
             progressBar.Max = 1000;
 
             progressBarStatus = 0;
 
-            ///run thread for increase progress bar
-            new Thread(new ThreadStart(delegate {
+            ThreadPool.QueueUserWorkItem(_ =>
+            {
 
-                while (true)
+                while (progressbarContor)
                 {
 
                     while (progressBarStatus < 1000)
@@ -86,13 +102,51 @@ namespace StructureAlgebrics.Pages
                     progressBar.Progress = 0;
                     progressBar.SecondaryProgress = 0;
                 }
-                RunOnUiThread(() => { });
+            });
 
-            })).Start();
+            int a = GenerateMatrix(groupElement.Text);
+            if (a != 0)
+            {
+                GroupPropertyRepository repo = new GroupPropertyRepository(matrix, a);
+                propertyes = repo.allProperty;
+                ArrayAdapter ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, propertyes);
+                listPropertiesView.Adapter = ListAdapter;
 
-
-
+            }
+            else {
+                Toast.MakeText(ApplicationContext, "Matricea trebuie sa fie de forma patrata: N x N", ToastLength.Long).Show();
+            }
+           
         }
+
+        public int GenerateMatrix(string text)
+        {
+            if (text.Length != 0)
+            {
+                matrix = new int[20, 20];
+                int contor = 0;
+                int dim = Convert.ToInt32(Math.Sqrt(text.Length));
+                if ((dim * dim) == text.Length)
+                {
+                    for (int i = 1; i < dim + 1; i++)
+                    {
+                        for (int j = 1; j < dim + 1; j++)
+                        {
+                            matrix[i, j] = Convert.ToInt32(new string(text[contor],1));
+                        }
+                        contor++;
+                    }
+                }
+                else { return 0; }
+                return dim;
+            }
+            else { return 0; }
+
+            
+        }
+
+
+
 
         protected override void OnStart()
         {

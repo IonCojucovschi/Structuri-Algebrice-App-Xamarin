@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="100"
-              android:background="@drawable/background">
+    android:background="@drawable/background">
     <RelativeLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -20,40 +20,55 @@
     <RelativeLayout
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:layout_weight="25">
+        android:layout_weight="15">
         <EditText
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
             android:paddingLeft="10dp"
             android:id="@+id/grupul"
+            android:lines="7"
+            android:minLines="6"
+            android:maxLines="10"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:hint="Introduceti elementele grupului" />
     </RelativeLayout>
     <ListView
+        android:background="#80ffffff"
         android:id="@+id/list_property"
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:divider="#80ffffff"
-        android:dividerHeight="40dp"
-        android:layout_weight="60" />
-  <ProgressBar
-      android:id="@+id/progressBar"
-      style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-      android:layout_width="match_parent"
-      android:layout_height="4dp"
-      android:progressDrawable="@drawable/progress_bar" />
+        android:dividerHeight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="70" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:progressDrawable="@drawable/progress_bar" />
     <RelativeLayout
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:layout_weight="10">
         <Button
+            android:layout_centerVertical="true"
             android:id="@+id/clear_all"
             android:text="Curata"
+            android:textColor="#ffffff"
+            android:background="#000b8e"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
         <Button
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:id="@+id/show_property"
             android:text="Vezi Proprietati"
+            android:textColor="#ffffff"
+            android:background="#000b8e"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
     </RelativeLayout>
