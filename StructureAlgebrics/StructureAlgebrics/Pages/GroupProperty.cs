@@ -18,9 +18,14 @@ namespace StructureAlgebrics.Pages
     [Activity(Label = "Structuri Algebrice", MainLauncher = true, Theme = "@style/MyTheme")]
     public class GroupProperty : Activity
     {
+
+
         private Button viewProperty;
         private Button clear;
         private ProgressBar progressBar;
+        public int progressBarStatus;
+
+
         private ListView listProperties;
         private EditText groupElement;
 
@@ -46,11 +51,7 @@ namespace StructureAlgebrics.Pages
         public void HandleEvents()
         {
             viewProperty.Click += ViewProperty_Click;
-
-
-
         }
-        public int progressBarStatus;
 
         private void ViewProperty_Click(object sender, EventArgs e)
         {
