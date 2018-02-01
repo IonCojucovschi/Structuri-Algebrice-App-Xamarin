@@ -14,7 +14,7 @@ using StructureAlgebrics.Manager;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "FirstPage", MainLauncher =true,Theme = "@style/MyTheme")]
+    [Activity(Label = "Structuri Algebrice", MainLauncher =false,Theme = "@style/MyTheme")]
     public class FirstPage : ActionBarActivity
     {
         private SupportToolbar mToolbar;

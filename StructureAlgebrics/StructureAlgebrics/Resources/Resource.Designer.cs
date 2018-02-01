@@ -1419,8 +1419,11 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f020047
 			public const int ic_action_refresh = 2130837575;
 			
+			// aapt resource value: 0x7f020049
+			public const int notification_template_icon_bg = 2130837577;
+			
 			// aapt resource value: 0x7f020048
-			public const int notification_template_icon_bg = 2130837576;
+			public const int progress_bar = 2130837576;
 			
 			static Drawable()
 			{
@@ -1435,8 +1438,8 @@ namespace StructureAlgebrics
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0c0054
-			public const int action0 = 2131492948;
+			// aapt resource value: 0x7f0c0059
+			public const int action0 = 2131492953;
 			
 			// aapt resource value: 0x7f0c0041
 			public const int action_bar = 2131492929;
@@ -1462,11 +1465,11 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0042
 			public const int action_context_bar = 2131492930;
 			
-			// aapt resource value: 0x7f0c0058
-			public const int action_divider = 2131492952;
+			// aapt resource value: 0x7f0c005d
+			public const int action_divider = 2131492957;
 			
-			// aapt resource value: 0x7f0c0062
-			public const int action_help = 2131492962;
+			// aapt resource value: 0x7f0c0067
+			public const int action_help = 2131492967;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int action_menu_divider = 2131492866;
@@ -1483,8 +1486,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0023
 			public const int action_mode_close_button = 2131492899;
 			
-			// aapt resource value: 0x7f0c0061
-			public const int action_refresh = 2131492961;
+			// aapt resource value: 0x7f0c0066
+			public const int action_refresh = 2131492966;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int activity_chooser_view_content = 2131492900;
@@ -1501,14 +1504,17 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002b
 			public const int buttonPanel = 2131492907;
 			
-			// aapt resource value: 0x7f0c0055
-			public const int cancel_action = 2131492949;
+			// aapt resource value: 0x7f0c005a
+			public const int cancel_action = 2131492954;
 			
 			// aapt resource value: 0x7f0c0039
 			public const int checkbox = 2131492921;
 			
-			// aapt resource value: 0x7f0c005b
-			public const int chronometer = 2131492955;
+			// aapt resource value: 0x7f0c0060
+			public const int chronometer = 2131492960;
+			
+			// aapt resource value: 0x7f0c0053
+			public const int clear_all = 2131492947;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int collapseActionView = 2131492892;
@@ -1531,8 +1537,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c000c
 			public const int disableHome = 2131492876;
 			
-			// aapt resource value: 0x7f0c0051
-			public const int drawer_layout = 2131492945;
+			// aapt resource value: 0x7f0c0056
+			public const int drawer_layout = 2131492950;
 			
 			// aapt resource value: 0x7f0c0043
 			public const int edit_query = 2131492931;
@@ -1540,14 +1546,17 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0019
 			public const int end = 2131492889;
 			
-			// aapt resource value: 0x7f0c0060
-			public const int end_padder = 2131492960;
+			// aapt resource value: 0x7f0c0065
+			public const int end_padder = 2131492965;
 			
 			// aapt resource value: 0x7f0c0025
 			public const int expand_activities_button = 2131492901;
 			
 			// aapt resource value: 0x7f0c0038
 			public const int expanded_menu = 2131492920;
+			
+			// aapt resource value: 0x7f0c0050
+			public const int grupul = 2131492944;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int home = 2131492868;
@@ -1564,17 +1573,17 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0026
 			public const int image = 2131492902;
 			
-			// aapt resource value: 0x7f0c005f
-			public const int info = 2131492959;
+			// aapt resource value: 0x7f0c0064
+			public const int info = 2131492964;
 			
-			// aapt resource value: 0x7f0c0052
-			public const int left_drawer = 2131492946;
+			// aapt resource value: 0x7f0c0057
+			public const int left_drawer = 2131492951;
 			
-			// aapt resource value: 0x7f0c0059
-			public const int line1 = 2131492953;
+			// aapt resource value: 0x7f0c005e
+			public const int line1 = 2131492958;
 			
-			// aapt resource value: 0x7f0c005d
-			public const int line3 = 2131492957;
+			// aapt resource value: 0x7f0c0062
+			public const int line3 = 2131492962;
 			
 			// aapt resource value: 0x7f0c0009
 			public const int listMode = 2131492873;
@@ -1582,8 +1591,11 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0028
 			public const int list_item = 2131492904;
 			
-			// aapt resource value: 0x7f0c0057
-			public const int media_actions = 2131492951;
+			// aapt resource value: 0x7f0c0051
+			public const int list_property = 2131492945;
+			
+			// aapt resource value: 0x7f0c005c
+			public const int media_actions = 2131492956;
 			
 			// aapt resource value: 0x7f0c001a
 			public const int middle = 2131492890;
@@ -1603,6 +1615,9 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002d
 			public const int parentPanel = 2131492909;
 			
+			// aapt resource value: 0x7f0c0052
+			public const int progressBar = 2131492946;
+			
 			// aapt resource value: 0x7f0c0005
 			public const int progress_circular = 2131492869;
 			
@@ -1612,8 +1627,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c003b
 			public const int radio = 2131492923;
 			
-			// aapt resource value: 0x7f0c0053
-			public const int right_drawer = 2131492947;
+			// aapt resource value: 0x7f0c0058
+			public const int right_drawer = 2131492952;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int screen = 2131492884;
@@ -1672,6 +1687,9 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0011
 			public const int showTitle = 2131492881;
 			
+			// aapt resource value: 0x7f0c0054
+			public const int show_property = 2131492948;
+			
 			// aapt resource value: 0x7f0c002c
 			public const int spacer = 2131492908;
 			
@@ -1687,8 +1705,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0017
 			public const int src_over = 2131492887;
 			
-			// aapt resource value: 0x7f0c0056
-			public const int status_bar_latest_event_content = 2131492950;
+			// aapt resource value: 0x7f0c005b
+			public const int status_bar_latest_event_content = 2131492955;
 			
 			// aapt resource value: 0x7f0c004c
 			public const int submit_area = 2131492940;
@@ -1696,17 +1714,17 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c000b
 			public const int tabMode = 2131492875;
 			
-			// aapt resource value: 0x7f0c005e
-			public const int text = 2131492958;
+			// aapt resource value: 0x7f0c0063
+			public const int text = 2131492963;
 			
-			// aapt resource value: 0x7f0c005c
-			public const int text2 = 2131492956;
+			// aapt resource value: 0x7f0c0061
+			public const int text2 = 2131492961;
 			
 			// aapt resource value: 0x7f0c0034
 			public const int textSpacerNoButtons = 2131492916;
 			
-			// aapt resource value: 0x7f0c005a
-			public const int time = 2131492954;
+			// aapt resource value: 0x7f0c005f
+			public const int time = 2131492959;
 			
 			// aapt resource value: 0x7f0c002a
 			public const int title = 2131492906;
@@ -1714,8 +1732,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002f
 			public const int title_template = 2131492911;
 			
-			// aapt resource value: 0x7f0c0050
-			public const int toolbar = 2131492944;
+			// aapt resource value: 0x7f0c0055
+			public const int toolbar = 2131492949;
 			
 			// aapt resource value: 0x7f0c002e
 			public const int topPanel = 2131492910;
@@ -1849,43 +1867,46 @@ namespace StructureAlgebrics
 			public const int abc_select_dialog_material = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int Main = 2130968601;
+			public const int grup_property = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int notification_media_action = 2130968602;
+			public const int Main = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int notification_media_cancel_action = 2130968603;
+			public const int notification_media_action = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int notification_template_big_media = 2130968604;
+			public const int notification_media_cancel_action = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int notification_template_big_media_narrow = 2130968605;
+			public const int notification_template_big_media = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_template_lines = 2130968606;
+			public const int notification_template_big_media_narrow = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_template_media = 2130968607;
+			public const int notification_template_lines = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_part_chronometer = 2130968608;
+			public const int notification_template_media = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_part_time = 2130968609;
+			public const int notification_template_part_chronometer = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int select_dialog_item_material = 2130968610;
+			public const int notification_template_part_time = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int select_dialog_multichoice_material = 2130968611;
+			public const int select_dialog_item_material = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int select_dialog_singlechoice_material = 2130968612;
+			public const int select_dialog_multichoice_material = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int support_simple_spinner_dropdown_item = 2130968613;
+			public const int select_dialog_singlechoice_material = 2130968613;
+			
+			// aapt resource value: 0x7f040026
+			public const int support_simple_spinner_dropdown_item = 2130968614;
 			
 			static Layout()
 			{
