@@ -16,7 +16,7 @@ using StructureAlgebrics.Reposytory;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Structuri Algebrice", MainLauncher = true, Theme = "@style/MyTheme")]
+    [Activity(Label = "Proprietatile grupului", MainLauncher = false, Theme = "@style/MyTheme")]
     public class GroupProperty : Activity
     {
 

@@ -66,6 +66,7 @@
     <Compile Include="Manager\MenuActionManager.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
+    <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +78,9 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\grup_property.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\produce_property.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

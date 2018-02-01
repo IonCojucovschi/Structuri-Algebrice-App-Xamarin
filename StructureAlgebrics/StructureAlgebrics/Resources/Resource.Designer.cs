@@ -1471,8 +1471,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c005d
 			public const int action_divider = 2131492957;
 			
-			// aapt resource value: 0x7f0c0067
-			public const int action_help = 2131492967;
+			// aapt resource value: 0x7f0c006a
+			public const int action_help = 2131492970;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int action_menu_divider = 2131492866;
@@ -1489,8 +1489,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0023
 			public const int action_mode_close_button = 2131492899;
 			
-			// aapt resource value: 0x7f0c0066
-			public const int action_refresh = 2131492966;
+			// aapt resource value: 0x7f0c0069
+			public const int action_refresh = 2131492969;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int activity_chooser_view_content = 2131492900;
@@ -1561,6 +1561,12 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0050
 			public const int grupul = 2131492944;
 			
+			// aapt resource value: 0x7f0c0066
+			public const int grupula = 2131492966;
+			
+			// aapt resource value: 0x7f0c0067
+			public const int grupulb = 2131492967;
+			
 			// aapt resource value: 0x7f0c0004
 			public const int home = 2131492868;
 			
@@ -1617,6 +1623,9 @@ namespace StructureAlgebrics
 			
 			// aapt resource value: 0x7f0c002d
 			public const int parentPanel = 2131492909;
+			
+			// aapt resource value: 0x7f0c0068
+			public const int produceViewGroup = 2131492968;
 			
 			// aapt resource value: 0x7f0c0052
 			public const int progressBar = 2131492946;
@@ -1900,16 +1909,19 @@ namespace StructureAlgebrics
 			public const int notification_template_part_time = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int select_dialog_item_material = 2130968611;
+			public const int produce_property = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int select_dialog_multichoice_material = 2130968612;
+			public const int select_dialog_item_material = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int select_dialog_singlechoice_material = 2130968613;
+			public const int select_dialog_multichoice_material = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int support_simple_spinner_dropdown_item = 2130968614;
+			public const int select_dialog_singlechoice_material = 2130968614;
+			
+			// aapt resource value: 0x7f040027
+			public const int support_simple_spinner_dropdown_item = 2130968615;
 			
 			static Layout()
 			{

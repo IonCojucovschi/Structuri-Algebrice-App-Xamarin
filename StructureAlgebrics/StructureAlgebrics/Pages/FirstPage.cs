@@ -14,7 +14,7 @@ using StructureAlgebrics.Manager;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Structuri Algebrice", MainLauncher =false,Theme = "@style/MyTheme")]
+    [Activity(Label = "Structuri Algebrice", MainLauncher =true,Theme = "@style/MyTheme")]
     public class FirstPage : ActionBarActivity
     {
         private SupportToolbar mToolbar;
@@ -87,10 +87,31 @@ namespace StructureAlgebrics.Pages
                 //This is the first the time the activity is ran
                 SupportActionBar.SetTitle(Resource.String.closeDrawer);
             }
+
+
+            mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
+
         }
 
+        private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            string activityChoser = mLeftDataSet[e.Position];
 
-
+            var intent = new Intent();
+            switch (activityChoser)
+            {
+                case "Proprietatile unui grup":
+                    intent.SetClass(this,typeof(GroupProperty));
+                    break;
+                case "Prop. prod. 2 grupuri":
+                    intent.SetClass(this,typeof(ProduceGroups));
+                    break;
+                default:
+                    intent.SetClass(this, typeof(FirstPage));
+                    break;
+            }
+            StartActivity(intent);
+        }
 
 
         public override bool OnOptionsItemSelected(IMenuItem item)
