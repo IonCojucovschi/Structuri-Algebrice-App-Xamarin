@@ -46,12 +46,14 @@ namespace StructureAlgebrics.Pages
             SetSupportActionBar(mToolbar);
 
             mLeftDataSet = new List<string>();
+            mLeftDataSet.Add("    PARTEA PRACTICA");
             mLeftDataSet.Add("Proprietatile unui grup");
             mLeftDataSet.Add("Prop. prod. 2 grupuri");
             mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
             mLeftDrawer.Adapter = mLeftAdapter;
 
             mRightDataSet = new List<string>();
+            mRightDataSet.Add("      PARTEA TEORETICA");
             mRightDataSet.Add("Prop. unui grup?");
             mRightDataSet.Add("Prop. prod. 2 grup.");
             mRightAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mRightDataSet);

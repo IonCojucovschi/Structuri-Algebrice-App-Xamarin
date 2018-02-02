@@ -2494,6 +2494,9 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f090073
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131296371;
 			
+			// aapt resource value: 0x7f090135
+			public const int CodeFont = 2131296565;
+			
 			// aapt resource value: 0x7f090134
 			public const int MyDrawerArrowStyle = 2131296564;
 			

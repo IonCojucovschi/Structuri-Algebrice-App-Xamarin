@@ -19,7 +19,7 @@ namespace StructureAlgebrics.Pages
         private TextView produceView;
         private Button clear;
         private Button showProperty;
-
+        private Thread statusbarThread;
         private ProgressBar progressBar;
         public int progressBarStatus;
 
@@ -65,7 +65,7 @@ namespace StructureAlgebrics.Pages
         {
             produceView.Text = "";
             propertyView.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
-
+            statusbarThread.Abort();
 
         }
 
@@ -82,12 +82,12 @@ namespace StructureAlgebrics.Pages
 
             progressBarStatus = 0;
 
-            ThreadPool.QueueUserWorkItem(_ =>
-            {
+            statusbarThread=new Thread(new ThreadStart(delegate {
+                int i = 0;
 
-                while (progressbarContor)
+                while (i < 100)
                 {
-
+                    i++;
                     while (progressBarStatus < 1000)
                     {
                         progressBarStatus += 1;
@@ -107,8 +107,10 @@ namespace StructureAlgebrics.Pages
                     progressBar.Progress = 0;
                     progressBar.SecondaryProgress = 0;
                 }
-            });
+                RunOnUiThread(() => { });
 
+            }));
+            statusbarThread.Start();
 
 
 

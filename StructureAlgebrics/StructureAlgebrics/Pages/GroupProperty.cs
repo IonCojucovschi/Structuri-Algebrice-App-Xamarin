@@ -32,6 +32,8 @@ namespace StructureAlgebrics.Pages
         private List<string> propertyes;
         private EditText groupElement;
 
+        private Thread statusbarThread;
+
 
         /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         static int[,] matrix;
@@ -67,6 +69,7 @@ namespace StructureAlgebrics.Pages
         {
             groupElement.Text = "";
             listPropertiesView.Adapter= new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
+            statusbarThread.Abort();
         }
 
         private void ViewProperty_Click(object sender, EventArgs e)
@@ -78,12 +81,12 @@ namespace StructureAlgebrics.Pages
 
             progressBarStatus = 0;
 
-            ThreadPool.QueueUserWorkItem(_ =>
-            {
+            statusbarThread = new Thread(new ThreadStart(delegate {
+                int i = 0;
 
-                while (progressbarContor)
+                while (i < 100)
                 {
-
+                    i++;
                     while (progressBarStatus < 1000)
                     {
                         progressBarStatus += 1;
@@ -103,7 +106,13 @@ namespace StructureAlgebrics.Pages
                     progressBar.Progress = 0;
                     progressBar.SecondaryProgress = 0;
                 }
-            });
+                RunOnUiThread(() => { });
+
+            }));
+            statusbarThread.Start();
+
+
+
 
             int a = GenerateMatrix(groupElement.Text);
             if (a != 0)

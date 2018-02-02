@@ -19,12 +19,46 @@
         android:layout_height="match_parent">
     <!-- The Main Content View -->
         <RelativeLayout
+            android:background="#80ffffff"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Structuri Algebrice" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="  Indrumar la cursul \n Structuri algebrice" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:padding="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="200dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/icon" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="    Cuvinte cheie: \n Quasygroups \n hgjg \n ghkjhgjk \n hgkgk \n Pentru mai multe  \n  swipe  in stinga sau dreapta" />
+                </RelativeLayout>
+            </LinearLayout>
         </RelativeLayout>
     <!-- The Left Navigation Drawer -->
         <ListView
@@ -33,9 +67,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:choiceMode="singleChoice"
-            android:divider="#818181"
+            android:divider="#000000"
             android:dividerHeight="1dp"
-            android:background="#E3F2FD" />
+            android:background="#90E3F2FD" />
+    <!--Right drawer-->
         <ListView
             android:id="@+id/right_drawer"
             android:layout_width="240dp"
@@ -44,6 +79,6 @@
             android:choiceMode="singleChoice"
             android:divider="#E2E2E2"
             android:dividerHeight="1dp"
-            android:background="#9E9E9E" />
+            android:background="#909E9E9E" />
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
