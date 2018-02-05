@@ -54,8 +54,9 @@ namespace StructureAlgebrics.Pages
 
             mRightDataSet = new List<string>();
             mRightDataSet.Add("      PARTEA TEORETICA");
-            mRightDataSet.Add("Prop. unui grup?");
-            mRightDataSet.Add("Prop. prod. 2 grup.");
+            mRightDataSet.Add("Cap I");
+            mRightDataSet.Add("Cap II");
+            mRightDataSet.Add("Lucrari laborator ex.");
             mRightAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mRightDataSet);
             mRightDrawer.Adapter = mRightAdapter;
 
@@ -92,7 +93,31 @@ namespace StructureAlgebrics.Pages
 
 
             mLeftDrawer.ItemClick += MLeftDrawer_ItemClick;
+            mRightDrawer.ItemClick += MRightDrawer_ItemClick;
 
+        }
+
+        private void MRightDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            string activityChoser = mRightDataSet[e.Position];
+
+            var intent = new Intent();
+            switch (activityChoser)
+            {
+                case "Cap I":
+                    intent.SetClass(this, typeof(GroupProperty));
+                    break;
+                case "Cap II":
+                    intent.SetClass(this, typeof(ProduceGroups));
+                    break;
+                case "Lucrari laborator ex.":
+                    intent.SetClass(this,typeof(LaboWorks));
+                    break;
+                default:
+                    //intent.SetClass(this, typeof(FirstPage));
+                    break;
+            }
+            StartActivity(intent);
         }
 
         private void MLeftDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -109,7 +134,7 @@ namespace StructureAlgebrics.Pages
                     intent.SetClass(this,typeof(ProduceGroups));
                     break;
                 default:
-                    intent.SetClass(this, typeof(FirstPage));
+                    //intent.SetClass(this, typeof(FirstPage));
                     break;
             }
             StartActivity(intent);

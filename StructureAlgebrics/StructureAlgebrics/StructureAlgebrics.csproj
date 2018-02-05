@@ -66,12 +66,18 @@
     <Compile Include="Manager\MenuActionManager.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
+    <Compile Include="Pages\LaboWorks.cs" />
     <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Laborator1_2.pdf" />
+    <AndroidAsset Include="Assets\Laborator3.pdf" />
+    <AndroidAsset Include="Assets\Laborator4.pdf" />
+    <AndroidAsset Include="Assets\Laborator5.pdf" />
+    <AndroidAsset Include="Assets\Laborator6.pdf" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -81,6 +87,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\produce_property.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\labo_list_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -140,6 +149,13 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\arm64-v8a\" />
+    <Folder Include="lib\armeabi\" />
+    <Folder Include="lib\armeadi-v7a\" />
+    <Folder Include="lib\mips\" />
+    <Folder Include="lib\x86\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
