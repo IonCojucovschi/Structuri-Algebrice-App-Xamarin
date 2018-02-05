@@ -36,6 +36,10 @@
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidHttpClientHandlerType>
+    </AndroidHttpClientHandlerType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -51,6 +55,9 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PdfViewBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.PdfView.Android.1.0.4\lib\PdfViewBinding.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -67,6 +74,7 @@
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
     <Compile Include="Pages\LaboWorks.cs" />
+    <Compile Include="Pages\PdfViewer.cs" />
     <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -79,6 +87,10 @@
     <AndroidAsset Include="Assets\Laborator5.pdf" />
     <AndroidAsset Include="Assets\Laborator6.pdf" />
     <None Include="GettingStarted.Xamarin" />
+    <AndroidNativeLibrary Include="lib\arm64-v8a\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\armeabi\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\x86\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libvudroid.so" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -90,6 +102,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\labo_list_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\pdfView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -150,13 +165,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="lib\arm64-v8a\" />
-    <Folder Include="lib\armeabi\" />
-    <Folder Include="lib\armeadi-v7a\" />
-    <Folder Include="lib\mips\" />
-    <Folder Include="lib\x86\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
