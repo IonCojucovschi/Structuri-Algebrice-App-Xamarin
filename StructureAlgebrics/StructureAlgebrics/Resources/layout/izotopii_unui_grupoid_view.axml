@@ -80,6 +80,20 @@
                 android:layout_width="match_parent"
                 android:hint="Introduceti elementele din substitutia gama:" />
         </LinearLayout>
+      <TextView
+            android:textSize="15dp"
+            android:text="Proprietatile Grupului a:"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+      <ListView
+            android:background="#80ffffff"
+            android:id="@+id/grupul_a_property"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:divider="#80ffffff"
+            android:dividerHeight="4dp"
+            android:layout_marginTop="4dp" />
         <TextView
             android:textSize="15dp"
             android:text="Values  E:"
@@ -93,6 +107,13 @@
            android:textColor="#ffffff"
            android:layout_height="wrap_content"
            android:layout_width="wrap_content" />
+
+      <TextView
+            android:textSize="15dp"
+            android:text="Dupa iteratia alfa:"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
         <ListView
             android:background="#80ffffff"
             android:id="@+id/alfa_property"
@@ -101,19 +122,41 @@
             android:divider="#80ffffff"
             android:dividerHeight="4dp"
             android:layout_marginTop="4dp" />
-        <TextView
-            android:textSize="15dp"
-            android:text="Produsul dintre grupuri este:"
-            android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:layout_width="match_parent" />
-        <TextView
-            android:gravity="center"
-            android:id="@+id/produceViewGroup"
-            android:layout_height="100dp"
-            android:layout_width="match_parent"
-            android:background="#80ffffff"
-            android:textColor="#000000" />
+
+      <TextView
+           android:textSize="15dp"
+           android:text="Dupa iteratia beta:"
+           android:textColor="#ffffff"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content" />
+      <ListView
+          android:background="#80ffffff"
+          android:id="@+id/beta_property"
+          android:layout_height="400dp"
+          android:layout_width="match_parent"
+          android:divider="#80ffffff"
+          android:dividerHeight="4dp"
+          android:layout_marginTop="4dp" />
+
+      <TextView
+           android:textSize="15dp"
+           android:text="Dupa iteratia gama:"
+           android:textColor="#ffffff"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content" />
+      <ListView
+          android:background="#80ffffff"
+          android:id="@+id/gama_property"
+          android:layout_height="400dp"
+          android:layout_width="match_parent"
+          android:divider="#80ffffff"
+          android:dividerHeight="4dp"
+          android:layout_marginTop="4dp" />
+ 
+      
+      
+      
+      
         <ProgressBar
             android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"

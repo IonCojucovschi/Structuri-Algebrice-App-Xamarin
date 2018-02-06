@@ -73,6 +73,7 @@
     <Compile Include="Manager\MenuActionManager.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
+    <Compile Include="Pages\IzotopGroup.cs" />
     <Compile Include="Pages\LaboratorsExampleActivity.cs" />
     <Compile Include="Pages\LaboWorks.cs" />
     <Compile Include="Pages\PdfViewer.cs" />
