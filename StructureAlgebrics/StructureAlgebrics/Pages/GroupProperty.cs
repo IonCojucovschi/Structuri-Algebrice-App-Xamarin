@@ -43,6 +43,7 @@ namespace StructureAlgebrics.Pages
         {
             base.OnCreate(savedInstanceState);
 
+            Window.SetSoftInputMode(SoftInput.AdjustNothing);
             SetContentView(Resource.Layout.grup_property);
             // Create your application here
             FindViews();

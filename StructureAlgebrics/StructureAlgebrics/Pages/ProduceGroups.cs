@@ -6,6 +6,7 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 using StructureAlgebrics.Reposytory;
+using Android.Views;
 
 namespace StructureAlgebrics.Pages
 {
@@ -32,13 +33,12 @@ namespace StructureAlgebrics.Pages
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Window.SetSoftInputMode(SoftInput.AdjustNothing);
 
             // Create your application here
             SetContentView(Resource.Layout.produce_property);
             FindViews();
             HandleEvents();
-
-
         }
 
         private void FindViews()
@@ -50,15 +50,12 @@ namespace StructureAlgebrics.Pages
             matrixa = FindViewById<EditText>(Resource.Id.grupula);
             matrixb = FindViewById<EditText>(Resource.Id.grupulb);
             progressBar = FindViewById<ProgressBar>(Resource.Id.produce_progressBar);
-
         }
 
         private void HandleEvents()
         {
             showProperty.Click += ShowProperty_Click;
             clear.Click += Clear_Click;
-
-
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -66,22 +63,17 @@ namespace StructureAlgebrics.Pages
             produceView.Text = "";
             propertyView.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
             statusbarThread.Abort();
-
         }
 
         private void ShowProperty_Click(object sender, EventArgs e)
         {
-
             //hd test 
             //matrixa.Text = "123312231";
             //matrixb.Text = "1221";
-
            bool progressbarContor = true;
             progressBar.Progress = 0;
             progressBar.Max = 1000;
-
             progressBarStatus = 0;
-
             statusbarThread=new Thread(new ThreadStart(delegate {
                 int i = 0;
 
@@ -111,12 +103,6 @@ namespace StructureAlgebrics.Pages
 
             }));
             statusbarThread.Start();
-
-
-
-
-
-
 
             int dima = GenerateMatrix(out matriceaA,matrixa.Text);
             int dimb = GenerateMatrix(out matriceaB, matrixb.Text);
@@ -148,16 +134,12 @@ namespace StructureAlgebrics.Pages
                 else
                 {
                     Toast.MakeText(ApplicationContext, "Matricea B trebuie sa fie de forma patrata: N x N", ToastLength.Long).Show();
-
                 }
-
             }
             else
             {
                 Toast.MakeText(ApplicationContext, "Matricea A trebuie sa fie de forma patrata: N x N", ToastLength.Long).Show();
             }
-
-
         }
 
         public int GenerateMatrix(out int[,] matrix1 ,string text)
@@ -176,7 +158,6 @@ namespace StructureAlgebrics.Pages
                             matrix1[i, j] = Convert.ToInt32(new string(text[contor], 1));
                             contor++;
                         }
-
                     }
                 }
                 else { return 0; }
@@ -184,8 +165,5 @@ namespace StructureAlgebrics.Pages
             }
             else { return 0; }
         }
-
-
-
     }
 }

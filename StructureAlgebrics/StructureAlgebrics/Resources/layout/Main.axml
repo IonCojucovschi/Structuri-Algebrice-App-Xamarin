@@ -56,7 +56,7 @@
                         android:textSize="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="    Cuvinte cheie: \n Quasygroups \n hgjg \n ghkjhgjk \n hgkgk \n Pentru mai multe  \n  swipe  in stinga sau dreapta" />
+                        android:text="Some Content:" />
                 </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -69,7 +69,7 @@
             android:choiceMode="singleChoice"
             android:divider="#000000"
             android:dividerHeight="1dp"
-            android:background="#90E3F2FD" />
+            android:background="#96ffffff" />
     <!--Right drawer-->
         <ListView
             android:id="@+id/right_drawer"
@@ -79,6 +79,6 @@
             android:choiceMode="singleChoice"
             android:divider="#E2E2E2"
             android:dividerHeight="1dp"
-            android:background="#909E9E9E" />
+            android:background="#95ffffff" />
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

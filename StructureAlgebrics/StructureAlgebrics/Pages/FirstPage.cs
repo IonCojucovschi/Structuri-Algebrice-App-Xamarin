@@ -14,7 +14,7 @@ using StructureAlgebrics.Manager;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Structuri Algebrice", MainLauncher =false,Theme = "@style/MyTheme")]
+    [Activity(Label = "Structuri Algebrice", MainLauncher =true,Theme = "@style/MyTheme")]
     public class FirstPage : ActionBarActivity
     {
         private SupportToolbar mToolbar;
@@ -111,7 +111,7 @@ namespace StructureAlgebrics.Pages
                     intent.SetClass(this, typeof(ProduceGroups));
                     break;
                 case "Lucrari laborator ex.":
-                    intent.SetClass(this,typeof(LaboWorks));
+                    intent.SetClass(this,typeof(LaboratorsExampleActivity));
                     break;
                 default:
                     //intent.SetClass(this, typeof(FirstPage));

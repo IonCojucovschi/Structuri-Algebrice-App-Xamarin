@@ -7,7 +7,7 @@ using Com.Joanzapata.Pdfview;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "Pdf Viewer", MainLauncher = true)]
+    [Activity(Label = "Pdf Viewer", MainLauncher = false, Theme = "@style/MyTheme")]
     public class PdfViewer : Activity
     {
         private PDFView pdfView;
@@ -17,9 +17,9 @@ namespace StructureAlgebrics.Pages
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.pdfView);
-
+            resourcePdf = Intent.Extras.GetString("src");
             pdfView = FindViewById<PDFView>(Resource.Id.pdfView);
-            pdfView.FromAsset("Laborator3.pdf").Load();
+            pdfView.FromAsset(resourcePdf).Load();
         }
     }
 }

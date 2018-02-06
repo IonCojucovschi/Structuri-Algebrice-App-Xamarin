@@ -3,7 +3,6 @@
     android:background="@drawable/background"
     android:layout_height="match_parent"
     android:fillViewport="true"
-            android:padding="5dp"
     android:layout_width="match_parent">
     <LinearLayout
         android:orientation="vertical"
@@ -13,7 +12,7 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent">
             <TextView
-                android:text="Proprietatile Produsului Grupurilor"
+                android:text="Izotopii unui grupoid."
                 android:textSize="15dp"
                 android:textColor="#ffffff"
                 android:layout_height="wrap_content"
@@ -37,7 +36,7 @@
                 android:maxLines="10"
                 android:layout_height="39dp"
                 android:layout_width="match_parent"
-                android:hint="Introduceti elementele grupului a" />
+                android:hint="Introduceti elementele grupoidului a" />
             <EditText
                 android:layout_marginTop="4dp"
                 android:background="#80ffffff"
@@ -45,23 +44,58 @@
                 android:scrollbars="horizontal"
                 android:inputType="number"
                 android:paddingLeft="10dp"
-                android:id="@+id/grupulb"
+                android:id="@+id/alfa"
                 android:lines="7"
                 android:minLines="6"
                 android:maxLines="10"
                 android:layout_height="39dp"
                 android:layout_width="match_parent"
-                android:hint="Introduceti elementele grupului b" />
+                android:hint="Introduceti elementele din substitutia alfa:" />
+            <EditText
+                android:layout_marginTop="4dp"
+                android:background="#80ffffff"
+                android:textColor="#000000"
+                android:scrollbars="horizontal"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:id="@+id/beta"
+                android:lines="7"
+                android:minLines="6"
+                android:maxLines="10"
+                android:layout_height="39dp"
+                android:layout_width="match_parent"
+                android:hint="Introduceti elementele din substitutia beta :" />
+            <EditText
+                android:layout_marginTop="4dp"
+                android:background="#80ffffff"
+                android:textColor="#000000"
+                android:scrollbars="horizontal"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:id="@+id/gama"
+                android:lines="7"
+                android:minLines="6"
+                android:maxLines="10"
+                android:layout_height="39dp"
+                android:layout_width="match_parent"
+                android:hint="Introduceti elementele din substitutia gama:" />
         </LinearLayout>
         <TextView
             android:textSize="15dp"
-            android:text="Proprietatile produsului:"
+            android:text="Values  E:"
             android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
+      <TextView
+           android:textSize="15dp"
+           android:text=""
+           android:id="@+id/values_E"
+           android:textColor="#ffffff"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content" />
         <ListView
             android:background="#80ffffff"
-            android:id="@+id/produce_list_property"
+            android:id="@+id/alfa_property"
             android:layout_height="400dp"
             android:layout_width="match_parent"
             android:divider="#80ffffff"

@@ -73,10 +73,12 @@
     <Compile Include="Manager\MenuActionManager.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
+    <Compile Include="Pages\LaboratorsExampleActivity.cs" />
     <Compile Include="Pages\LaboWorks.cs" />
     <Compile Include="Pages\PdfViewer.cs" />
     <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
+    <Compile Include="Reposytory\LaboratorsList.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +107,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\pdfView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\laborator_example_list_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\izotopii_unui_grupoid_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
