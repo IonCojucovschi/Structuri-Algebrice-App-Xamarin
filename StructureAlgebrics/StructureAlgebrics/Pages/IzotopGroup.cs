@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace StructureAlgebrics.Pages
 {
-    [Activity(Label = "IzotopGroup")]
+    [Activity(Label = "Izotopi", MainLauncher = true, Theme = "@style/MyTheme")]
     public class IzotopGroup : Activity
     {
         private EditText grupulA;
@@ -33,12 +33,17 @@ namespace StructureAlgebrics.Pages
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.izotopii_unui_grupoid_view);
-            
+            Window.SetSoftInputMode(SoftInput.AdjustNothing);
+
             // Create your application here
 
 
         }
+        public void FindViewss()
+        {
 
+
+        }
 
 
     }
