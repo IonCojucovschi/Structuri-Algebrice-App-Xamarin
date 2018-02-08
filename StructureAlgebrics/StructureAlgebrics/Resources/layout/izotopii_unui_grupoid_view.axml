@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
       <TextView
+            android:gravity="center"
             android:textSize="15dp"
             android:textColor="#ffffff"
             android:id="@+id/iteratia_alfa"
@@ -101,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
       <TextView
+            android:gravity="center"
             android:textSize="15dp"
             android:textColor="#ffffff"
             android:id="@+id/iteratia_beta"
@@ -114,6 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
       <TextView
+            android:gravity="center"
             android:textSize="15dp"
             android:textColor="#ffffff"
             android:id="@+id/iteratia_gama"

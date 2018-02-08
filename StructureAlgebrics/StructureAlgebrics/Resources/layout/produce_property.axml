@@ -3,7 +3,7 @@
     android:background="@drawable/background"
     android:layout_height="match_parent"
     android:fillViewport="true"
-            android:padding="5dp"
+    android:padding="5dp"
     android:layout_width="match_parent">
     <LinearLayout
         android:orientation="vertical"

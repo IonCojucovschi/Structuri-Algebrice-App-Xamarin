@@ -16,7 +16,8 @@ namespace StructureAlgebrics.Reposytory
     {
         int[,] t1 = new int[20, 20];
         static int r1, d1, r, d, r2, t, i, j, k, p, d2;
-        int[] c, b=new int[100];
+        static int[] b=new int[100];
+        static int[] c = new int[100];
         public List<string> allProperty;
 
         public int[,] matrixProduce = new int[20, 20];
@@ -24,6 +25,9 @@ namespace StructureAlgebrics.Reposytory
         public int[,] alfaMatrix = new int[20, 20];
         public int[,] betaMatrix = new int[20, 20];
         public int[,] gamaMatrix = new int[20, 20];
+
+
+        public string ValuesE;
         public GroupPropertyRepository(int[,] matricea,int dimensiunea)
         {
             allProperty = new List<string>();
@@ -132,17 +136,19 @@ namespace StructureAlgebrics.Reposytory
 
 
 
-        public  void E(int[,] a, int n)
+        public  string E(int[,] a, int n)
         {
             int j = 0;
             for (int i = 1; i < n + 1; i++)
             {
                 if (a[i, i] == i && nn(a, i, n) != 0 && mm(a, i, n) != 0)
                 {
-                    Console.WriteLine("=E(" + nn(a, i, n) + "," + mm(a, i, n) + ");"); j++;
+                    ValuesE = "E(" + nn(a, i, n) + "," + mm(a, i, n) + ");";///Console.WriteLine("=E(" + nn(a, i, n) + "," + mm(a, i, n) + ");");
+                    j++;
                 }
             }
-            if (j == 0) Console.WriteLine("NU sunt");
+            if (j == 0) ValuesE="Nu sunt";///Console.WriteLine("NU sunt");
+            return ValuesE;
         }
 
         public  int mm(int[,] a, int g, int n)

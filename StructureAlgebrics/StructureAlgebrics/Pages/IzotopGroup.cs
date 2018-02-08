@@ -140,6 +140,12 @@ namespace StructureAlgebrics.Pages
                 ArrayAdapter ListAdapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, propGrGama);
                 gamaProperty.Adapter = ListAdapter;
 
+                string valuesEA = repo.E(matrix,dimGroup);
+                string valuesEG = repo.E(matriceaGama, dimGroup);
+                valEa.Text = valuesEA;
+                valEg.Text = valuesEG;
+
+
             }
             else
             {
