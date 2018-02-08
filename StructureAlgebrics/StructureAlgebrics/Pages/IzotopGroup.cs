@@ -71,7 +71,24 @@ namespace StructureAlgebrics.Pages
         private void HandleEvents()
         {
             viewButton.Click += ViewButton_Click;
+            clearButton.Click += ClearButton_Click;
+        }
 
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            grupulA.Text="";
+          alfa.Text="";
+        beta.Text="";
+        gama.Text="";
+        iteratiaAlfa.Text="";
+        iteratiaBeta.Text="";
+         iteratiaGama.Text="";
+        valEa.Text="";
+       valEg.Text="";
+            ArrayAdapter ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
+            grupulAProperty.Adapter = ListAdapter;
+            ArrayAdapter ListAdapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new List<string>());
+            gamaProperty.Adapter = ListAdapter;
         }
 
         private void ViewButton_Click(object sender, EventArgs e)
@@ -150,7 +167,7 @@ namespace StructureAlgebrics.Pages
             else
             {
 
-                Toast.MakeText(ApplicationContext, "Dimansiunile grupului sau a substitutiilor nu corespund.", ToastLength.Long).Show();
+                Toast.MakeText(ApplicationContext, "   Dimansiunile grupului sau a substitutiilor nu corespund.", ToastLength.Long).Show();
 
             }
 
