@@ -14,12 +14,16 @@ namespace StructureAlgebrics.Reposytory
 {
     public class GroupPropertyRepository
     {
-        int[,] t1=new int[20,20];
+        int[,] t1 = new int[20, 20];
         static int r1, d1, r, d, r2, t, i, j, k, p, d2;
+        int[] c, b=new int[100];
         public List<string> allProperty;
 
-        public int[,] matrixProduce=new int[20,20];
+        public int[,] matrixProduce = new int[20, 20];
 
+        public int[,] alfaMatrix = new int[20, 20];
+        public int[,] betaMatrix = new int[20, 20];
+        public int[,] gamaMatrix = new int[20, 20];
         public GroupPropertyRepository(int[,] matricea,int dimensiunea)
         {
             allProperty = new List<string>();
@@ -50,6 +54,163 @@ namespace StructureAlgebrics.Reposytory
             produs_cartezian(out matrixProduce, matriceaA,matriceaB,dimA,dimB);
              
         }
+
+        public GroupPropertyRepository(int[,] InitialMatrix,int[] alpha,int[] beta,int[] gama,int n)
+        {
+            ////n- diemsiunea matricei ,,grupului,,,,,, alpha,beta,gama -- substitutiile.
+            iteratiaAlfa(ref InitialMatrix, out alfaMatrix, ref alpha, n);
+            iteratiaBeta(ref alfaMatrix, out betaMatrix, ref beta, n);
+            iteratiaGama(ref betaMatrix, out gamaMatrix, ref gama, n);
+
+        }
+
+
+
+
+        public  void iteratiaAlfa(ref int[,] a, out int[,] b, ref int[] substitutia, int n)////numele iteratiei, array a , array b , dimensiunea n
+        {
+            b = new int[15, 15];
+            int t = 0;
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < n + 1; j++)
+                {
+                    t = substitutia[i];
+                    b[i, j] = a[t, j];
+                }
+            //Console.WriteLine("ITERATIA ALFA");
+            //for (int i = 1; i < n + 1; i++)
+            //{
+            //    for (int j = 1; j < n + 1; j++)
+            //    {
+            //        Console.Write(b[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+        }
+
+        public  void iteratiaBeta(ref int[,] a, out int[,] b, ref int[] substitutia, int n)////numele iteratiei, array a , array b , dimensiunea n
+        {
+            b = new int[15, 15];
+            int t = 0;
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < n + 1; j++)
+                {
+                    t = substitutia[j];
+                    b[i, j] = a[i, t];
+                }
+           /// Console.WriteLine("ITERATIA BETA");
+            //for (int i = 1; i < n + 1; i++)
+            //{
+            //    for (int j = 1; j < n + 1; j++)
+            //    {
+            //        Console.Write(b[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+        }
+
+        public  void iteratiaGama(ref int[,] a, out int[,] b, ref int[] substitutia, int n)////numele iteratiei, array a(valori) , array b(variabila) , dimensiunea n
+        {
+            int t = 0;
+            b = new int[15, 15];
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < n + 1; j++)
+                {
+                    t = a[i, j];
+                    b[i, j] = substitutia[t];
+                }
+            //Console.WriteLine("ITERATIA GAMA ");
+            //for (int i = 1; i < n + 1; i++)
+            //{
+            //    for (int j = 1; j < n + 1; j++)
+            //    {
+            //        Console.Write(b[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+        }
+
+
+
+        public  void E(int[,] a, int n)
+        {
+            int j = 0;
+            for (int i = 1; i < n + 1; i++)
+            {
+                if (a[i, i] == i && nn(a, i, n) != 0 && mm(a, i, n) != 0)
+                {
+                    Console.WriteLine("=E(" + nn(a, i, n) + "," + mm(a, i, n) + ");"); j++;
+                }
+            }
+            if (j == 0) Console.WriteLine("NU sunt");
+        }
+
+        public  int mm(int[,] a, int g, int n)
+        {
+            int ii, jj, k, x, q;
+
+            for (jj = 1; jj < n + 1; jj++)
+            {
+                k = 0;
+                x = jj;
+
+                do
+                {
+                    x = a[x, g];
+                    k++;
+                } while (x != jj && k < n + 1);
+
+                if (k > n + 1) b[jj] = 0;
+                else b[jj] = k;
+            }
+
+            q = b[2];
+            for (jj = 2; jj < n + 1; jj++)
+            {
+                if (b[jj] > q)
+                {
+                    q = b[jj];
+                    break;
+                }
+
+            }
+            return q;
+        }
+
+        public  int nn(int[,] a, int gg, int n)
+        {
+
+            int ii, jj, k, x, q;
+            for (jj = 1; jj < n + 1; jj++)
+            {
+                k = 0;
+                x = jj;
+
+                do
+                {
+                    x = a[gg, x];
+                    k++;
+                } while (x != jj && k < n + 2);
+
+                if (k > n + 1) c[jj] = 0;
+                else c[jj] = k;
+
+
+            }
+            q = c[2];
+            for (jj = 2; jj < n + 1; jj++)
+            {
+                if (c[jj] > q) { q = c[jj]; break; }
+            }
+            return q;
+        }
+
+
+
+
+
+
+
 
 
 
