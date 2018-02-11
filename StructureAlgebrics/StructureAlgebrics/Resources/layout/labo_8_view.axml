@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="5">
+            <TextView
+                android:text="Compunearea Substitutiilor"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/sube"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia e:" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/suba"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia a:" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/subb"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia b:" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/subg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia g:" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/subh"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia h:" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="#80ffffff"
+            android:textColor="#000000"
+            android:scrollbars="horizontal"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:id="@+id/subr"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Substitutia r:" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:text="f2:"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#80000000"
+            android:id="@+id/content_f2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+        <ProgressBar
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progressDrawable="@drawable/progress_bar" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/clear_all"
+            android:text="Curata"
+            android:textColor="#ffffff"
+            android:background="#000b8e"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/show_property"
+            android:text="Vezi Proprietati"
+            android:textColor="#ffffff"
+            android:background="#000b8e"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

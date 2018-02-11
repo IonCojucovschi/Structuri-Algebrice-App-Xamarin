@@ -1441,8 +1441,8 @@ namespace StructureAlgebrics
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0c0069
-			public const int action0 = 2131492969;
+			// aapt resource value: 0x7f0c0070
+			public const int action0 = 2131492976;
 			
 			// aapt resource value: 0x7f0c0041
 			public const int action_bar = 2131492929;
@@ -1468,11 +1468,11 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0042
 			public const int action_context_bar = 2131492930;
 			
-			// aapt resource value: 0x7f0c006d
-			public const int action_divider = 2131492973;
+			// aapt resource value: 0x7f0c0074
+			public const int action_divider = 2131492980;
 			
-			// aapt resource value: 0x7f0c007c
-			public const int action_help = 2131492988;
+			// aapt resource value: 0x7f0c0083
+			public const int action_help = 2131492995;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int action_menu_divider = 2131492866;
@@ -1489,8 +1489,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0023
 			public const int action_mode_close_button = 2131492899;
 			
-			// aapt resource value: 0x7f0c007b
-			public const int action_refresh = 2131492987;
+			// aapt resource value: 0x7f0c0082
+			public const int action_refresh = 2131492994;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int activity_chooser_view_content = 2131492900;
@@ -1513,14 +1513,14 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002b
 			public const int buttonPanel = 2131492907;
 			
-			// aapt resource value: 0x7f0c006a
-			public const int cancel_action = 2131492970;
+			// aapt resource value: 0x7f0c0071
+			public const int cancel_action = 2131492977;
 			
 			// aapt resource value: 0x7f0c0039
 			public const int checkbox = 2131492921;
 			
-			// aapt resource value: 0x7f0c0070
-			public const int chronometer = 2131492976;
+			// aapt resource value: 0x7f0c0077
+			public const int chronometer = 2131492983;
 			
 			// aapt resource value: 0x7f0c0053
 			public const int clear_all = 2131492947;
@@ -1533,6 +1533,9 @@ namespace StructureAlgebrics
 			
 			// aapt resource value: 0x7f0c0031
 			public const int contentPanel = 2131492913;
+			
+			// aapt resource value: 0x7f0c0069
+			public const int content_f2 = 2131492969;
 			
 			// aapt resource value: 0x7f0c0037
 			public const int custom = 2131492919;
@@ -1549,8 +1552,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c000c
 			public const int disableHome = 2131492876;
 			
-			// aapt resource value: 0x7f0c0066
-			public const int drawer_layout = 2131492966;
+			// aapt resource value: 0x7f0c006d
+			public const int drawer_layout = 2131492973;
 			
 			// aapt resource value: 0x7f0c0043
 			public const int edit_query = 2131492931;
@@ -1558,8 +1561,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0019
 			public const int end = 2131492889;
 			
-			// aapt resource value: 0x7f0c0075
-			public const int end_padder = 2131492981;
+			// aapt resource value: 0x7f0c007c
+			public const int end_padder = 2131492988;
 			
 			// aapt resource value: 0x7f0c0025
 			public const int expand_activities_button = 2131492901;
@@ -1582,11 +1585,11 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c005d
 			public const int grupul_a_property = 2131492957;
 			
-			// aapt resource value: 0x7f0c0077
-			public const int grupula = 2131492983;
+			// aapt resource value: 0x7f0c007e
+			public const int grupula = 2131492990;
 			
-			// aapt resource value: 0x7f0c0078
-			public const int grupulb = 2131492984;
+			// aapt resource value: 0x7f0c007f
+			public const int grupulb = 2131492991;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int home = 2131492868;
@@ -1603,8 +1606,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0026
 			public const int image = 2131492902;
 			
-			// aapt resource value: 0x7f0c0074
-			public const int info = 2131492980;
+			// aapt resource value: 0x7f0c007b
+			public const int info = 2131492987;
 			
 			// aapt resource value: 0x7f0c0059
 			public const int iteratia_alfa = 2131492953;
@@ -1615,20 +1618,20 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c005b
 			public const int iteratia_gama = 2131492955;
 			
-			// aapt resource value: 0x7f0c0063
-			public const int labo_list = 2131492963;
+			// aapt resource value: 0x7f0c006a
+			public const int labo_list = 2131492970;
 			
-			// aapt resource value: 0x7f0c0064
-			public const int laborators_list_view = 2131492964;
-			
-			// aapt resource value: 0x7f0c0067
-			public const int left_drawer = 2131492967;
+			// aapt resource value: 0x7f0c006b
+			public const int laborators_list_view = 2131492971;
 			
 			// aapt resource value: 0x7f0c006e
-			public const int line1 = 2131492974;
+			public const int left_drawer = 2131492974;
 			
-			// aapt resource value: 0x7f0c0072
-			public const int line3 = 2131492978;
+			// aapt resource value: 0x7f0c0075
+			public const int line1 = 2131492981;
+			
+			// aapt resource value: 0x7f0c0079
+			public const int line3 = 2131492985;
 			
 			// aapt resource value: 0x7f0c0009
 			public const int listMode = 2131492873;
@@ -1639,8 +1642,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0051
 			public const int list_property = 2131492945;
 			
-			// aapt resource value: 0x7f0c006c
-			public const int media_actions = 2131492972;
+			// aapt resource value: 0x7f0c0073
+			public const int media_actions = 2131492979;
 			
 			// aapt resource value: 0x7f0c001a
 			public const int middle = 2131492890;
@@ -1660,14 +1663,14 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002d
 			public const int parentPanel = 2131492909;
 			
-			// aapt resource value: 0x7f0c0076
-			public const int pdfView = 2131492982;
+			// aapt resource value: 0x7f0c007d
+			public const int pdfView = 2131492989;
 			
-			// aapt resource value: 0x7f0c007a
-			public const int produceViewGroup = 2131492986;
+			// aapt resource value: 0x7f0c0081
+			public const int produceViewGroup = 2131492993;
 			
-			// aapt resource value: 0x7f0c0079
-			public const int produce_list_property = 2131492985;
+			// aapt resource value: 0x7f0c0080
+			public const int produce_list_property = 2131492992;
 			
 			// aapt resource value: 0x7f0c0060
 			public const int produce_progressBar = 2131492960;
@@ -1684,8 +1687,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c003b
 			public const int radio = 2131492923;
 			
-			// aapt resource value: 0x7f0c0068
-			public const int right_drawer = 2131492968;
+			// aapt resource value: 0x7f0c006f
+			public const int right_drawer = 2131492975;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int screen = 2131492884;
@@ -1765,26 +1768,44 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c0017
 			public const int src_over = 2131492887;
 			
-			// aapt resource value: 0x7f0c006b
-			public const int status_bar_latest_event_content = 2131492971;
+			// aapt resource value: 0x7f0c0072
+			public const int status_bar_latest_event_content = 2131492978;
+			
+			// aapt resource value: 0x7f0c0064
+			public const int suba = 2131492964;
+			
+			// aapt resource value: 0x7f0c0065
+			public const int subb = 2131492965;
+			
+			// aapt resource value: 0x7f0c0063
+			public const int sube = 2131492963;
+			
+			// aapt resource value: 0x7f0c0066
+			public const int subg = 2131492966;
+			
+			// aapt resource value: 0x7f0c0067
+			public const int subh = 2131492967;
 			
 			// aapt resource value: 0x7f0c004c
 			public const int submit_area = 2131492940;
 			
+			// aapt resource value: 0x7f0c0068
+			public const int subr = 2131492968;
+			
 			// aapt resource value: 0x7f0c000b
 			public const int tabMode = 2131492875;
 			
-			// aapt resource value: 0x7f0c0073
-			public const int text = 2131492979;
+			// aapt resource value: 0x7f0c007a
+			public const int text = 2131492986;
 			
-			// aapt resource value: 0x7f0c0071
-			public const int text2 = 2131492977;
+			// aapt resource value: 0x7f0c0078
+			public const int text2 = 2131492984;
 			
 			// aapt resource value: 0x7f0c0034
 			public const int textSpacerNoButtons = 2131492916;
 			
-			// aapt resource value: 0x7f0c006f
-			public const int time = 2131492975;
+			// aapt resource value: 0x7f0c0076
+			public const int time = 2131492982;
 			
 			// aapt resource value: 0x7f0c002a
 			public const int title = 2131492906;
@@ -1792,8 +1813,8 @@ namespace StructureAlgebrics
 			// aapt resource value: 0x7f0c002f
 			public const int title_template = 2131492911;
 			
-			// aapt resource value: 0x7f0c0065
-			public const int toolbar = 2131492965;
+			// aapt resource value: 0x7f0c006c
+			public const int toolbar = 2131492972;
 			
 			// aapt resource value: 0x7f0c002e
 			public const int topPanel = 2131492910;
@@ -1939,55 +1960,58 @@ namespace StructureAlgebrics
 			public const int izotopii_unui_grupoid_view = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int labo_list_view = 2130968603;
+			public const int labo_8_view = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int laborator_example_list_view = 2130968604;
+			public const int labo_list_view = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int Main = 2130968605;
+			public const int laborator_example_list_view = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_media_action = 2130968606;
+			public const int Main = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_media_cancel_action = 2130968607;
+			public const int notification_media_action = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_big_media = 2130968608;
+			public const int notification_media_cancel_action = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_big_media_narrow = 2130968609;
+			public const int notification_template_big_media = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_template_lines = 2130968610;
+			public const int notification_template_big_media_narrow = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_media = 2130968611;
+			public const int notification_template_lines = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_part_chronometer = 2130968612;
+			public const int notification_template_media = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_part_time = 2130968613;
+			public const int notification_template_part_chronometer = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int pdfView = 2130968614;
+			public const int notification_template_part_time = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int produce_property = 2130968615;
+			public const int pdfView = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int select_dialog_item_material = 2130968616;
+			public const int produce_property = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int select_dialog_multichoice_material = 2130968617;
+			public const int select_dialog_item_material = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int select_dialog_singlechoice_material = 2130968618;
+			public const int select_dialog_multichoice_material = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int support_simple_spinner_dropdown_item = 2130968619;
+			public const int select_dialog_singlechoice_material = 2130968619;
+			
+			// aapt resource value: 0x7f04002c
+			public const int support_simple_spinner_dropdown_item = 2130968620;
 			
 			static Layout()
 			{

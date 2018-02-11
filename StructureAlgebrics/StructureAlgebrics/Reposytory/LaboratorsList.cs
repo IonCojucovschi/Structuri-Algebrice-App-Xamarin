@@ -28,8 +28,8 @@ namespace StructureAlgebrics.Reposytory
             AllLaborators.Add(new Labo { Name="Laboratorul numarul 4",Path= "Laborator4.pdf" });
             AllLaborators.Add(new Labo { Name="Laboratorul numarul 5",Path= "Laborator5.pdf" });
             AllLaborators.Add(new Labo { Name="Laboratorul numarul 6",Path= "Laborator6.pdf" });
-            AllLaborators.Add(new Labo { Name="Laboratorul numarul 1",Path= "Laborator1_2.pdf" });
-            AllLaborators.Add(new Labo { Name="Laboratorul numarul 1",Path= "Laborator1_2.pdf" });
+            AllLaborators.Add(new Labo { Name="Laboratorul numarul 7",Path= "Laborator1_2.pdf" });
+            AllLaborators.Add(new Labo { Name="Laboratorul numarul 8",Path= "Laborator1_2.pdf" });
 
         }
 

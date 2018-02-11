@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager\MenuActionManager.cs" />
+    <Compile Include="Pages\CompuneareaSubstitutiilor.cs" />
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Pages\GroupProperty.cs" />
     <Compile Include="Pages\IzotopGroup.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Pages\PdfViewer.cs" />
     <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
+    <Compile Include="Reposytory\Labo8Repository.cs" />
     <Compile Include="Reposytory\LaboratorsList.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +116,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\izotopii_unui_grupoid_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\labo_8_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
