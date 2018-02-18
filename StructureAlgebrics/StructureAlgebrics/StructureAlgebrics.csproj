@@ -53,6 +53,9 @@
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PdfViewBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -91,6 +94,8 @@
     <AndroidAsset Include="Assets\Laborator4.pdf" />
     <AndroidAsset Include="Assets\Laborator5.pdf" />
     <AndroidAsset Include="Assets\Laborator6.pdf" />
+    <AndroidAsset Include="Assets\Laborator7.pdf" />
+    <AndroidAsset Include="Assets\Laborator8.pdf" />
     <None Include="GettingStarted.Xamarin" />
     <AndroidNativeLibrary Include="lib\arm64-v8a\libvudroid.so" />
     <AndroidNativeLibrary Include="lib\armeabi\libvudroid.so" />
