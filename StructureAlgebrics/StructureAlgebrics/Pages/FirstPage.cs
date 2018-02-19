@@ -50,7 +50,8 @@ namespace StructureAlgebrics.Pages
             mLeftDataSet.Add("Proprietatile unui grup");
             mLeftDataSet.Add("Prop. prod. 2 grupuri");
             mLeftDataSet.Add("Izotopii grupului");
-            mLeftDataSet.Add("Compunerea sunstitutiilor");
+            mLeftDataSet.Add("Compunerea substitutiilor");
+            mLeftDataSet.Add("Laboratorul 4");
             mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
             mLeftDrawer.Adapter = mLeftAdapter;
 
@@ -138,8 +139,11 @@ namespace StructureAlgebrics.Pages
                 case "Izotopii grupului":
                     intent.SetClass(this,typeof(IzotopGroup));
                     break;
-                case "Compunerea sunstitutiilor":
+                case "Compunerea substitutiilor":
                     intent.SetClass(this,typeof(CompuneareaSubstitutiilor));
+                    break;
+                case "Laboratorul 4":
+                    intent.SetClass(this, typeof(Laboratorul4Activity));
                     break;
                 default:
                     return;//intent.SetClass(this, typeof(FirstPage));

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Proprietatile Produsului Grupurilor"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="100dp"
+            android:layout_width="match_parent">
+            <EditText
+                android:background="#80ffffff"
+                android:textColor="#000000"
+                android:scrollbars="horizontal"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:id="@+id/grupul_gr"
+                android:lines="7"
+                android:minLines="6"
+                android:maxLines="10"
+                android:layout_height="39dp"
+                android:layout_width="match_parent"
+                android:hint="Introduceti elementele grupului a" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <Button
+                    android:layout_centerVertical="true"
+                    android:id="@+id/legeaI"
+                    android:text="Legea I"
+                    android:textColor="#ffffff"
+                    android:background="#000b8e"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/legeaII"
+                    android:text="Legea II"
+                    android:textColor="#ffffff"
+                    android:background="#000b8e"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:textSize="15dp"
+            android:text="Proprietatile produsului:"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <ListView
+            android:background="#80ffffff"
+            android:id="@+id/produce_list_property"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:divider="#80ffffff"
+            android:dividerHeight="4dp"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:textSize="15dp"
+            android:text="Produsul dintre grupuri este:"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/produceViewGroup"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:layout_width="match_parent"
+            android:background="#80ffffff"
+            android:textColor="#000000" />
+        <ProgressBar
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/produce_progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progressDrawable="@drawable/progress_bar" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/clear_all"
+                android:text="Curata"
+                android:textColor="#ffffff"
+                android:background="#000b8e"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

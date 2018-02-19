@@ -79,10 +79,12 @@
     <Compile Include="Pages\GroupProperty.cs" />
     <Compile Include="Pages\IzotopGroup.cs" />
     <Compile Include="Pages\LaboratorsExampleActivity.cs" />
+    <Compile Include="Pages\Laboratorul4Activity.cs" />
     <Compile Include="Pages\LaboWorks.cs" />
     <Compile Include="Pages\PdfViewer.cs" />
     <Compile Include="Pages\ProduceGroups.cs" />
     <Compile Include="Reposytory\GroupPropertyRepository.cs" />
+    <Compile Include="Reposytory\Labo4Repository.cs" />
     <Compile Include="Reposytory\Labo8Repository.cs" />
     <Compile Include="Reposytory\LaboratorsList.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -124,6 +126,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\labo_8_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\laboratorul_4_well.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

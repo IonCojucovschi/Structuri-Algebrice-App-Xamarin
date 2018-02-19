@@ -153,12 +153,7 @@ namespace StructureAlgebrics.Pages
                 return dim;
             }
             else { return 0; }
-
-            
         }
-
-
-
 
         protected override void OnStart()
         {

@@ -49,7 +49,8 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp">
                     <TextView
                         android:layout_centerHorizontal="true"
                         android:textColor="#ffffff"
@@ -58,6 +59,12 @@
                         android:layout_height="match_parent"
                         android:text="Some Content:" />
                 </RelativeLayout>
+                <Button
+                    android:text="Raporteaza Erori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="#000b8e" />
             </LinearLayout>
         </RelativeLayout>
     <!-- The Left Navigation Drawer -->
